@@ -5,6 +5,14 @@ export interface User {
   status: 'online' | 'offline';
 }
 
+export interface Post {
+  id: string;
+  title: string;
+  content: string;
+  authorId: string;
+  likes: number;
+}
+
 // In-memory "database"
 export let users: User[] = [
   { id: '1', name: 'John Doe', email: 'john@example.com', status: 'online' },
@@ -17,4 +25,17 @@ export let users: User[] = [
   { id: '8', name: 'Jessica Brown', email: 'jessica@example.com', status: 'offline' },
   { id: '9', name: 'Christopher Davis', email: 'christopher@example.com', status: 'online' },
   { id: '10', name: 'Amanda Wilson', email: 'amanda@example.com', status: 'offline' },
+];
+
+export let posts: Post[] = [
+  { id: '1', title: 'First Post', content: 'This is the first post.', authorId: '1', likes: 0 },
+  { id: '2', title: 'Second Post', content: 'This is the second post.', authorId: '2', likes: 0 },
+  { id: '3', title: 'Third Post', content: 'This is the third post.', authorId: '3', likes: 0 },
+  { id: '4', title: 'Fourth Post', content: 'This is the fourth post.', authorId: '4', likes: 0 },
+  { id: '5', title: 'Fifth Post', content: 'This is the fifth post.', authorId: '5', likes: 0 },
+  { id: '6', title: 'Sixth Post', content: 'This is the sixth post.', authorId: '6', likes: 0 },
+  { id: '7', title: 'Seventh Post', content: 'This is the seventh post.', authorId: '7', likes: 0 },
+  { id: '8', title: 'Eighth Post', content: 'This is the eighth post.', authorId: '8', likes: 0 },
+  { id: '9', title: 'Ninth Post', content: 'This is the ninth post.', authorId: '9', likes: 0 },
+  { id: '10', title: 'Tenth Post', content: 'This is the tenth post.', authorId: '10', likes: 0 },
 ];
