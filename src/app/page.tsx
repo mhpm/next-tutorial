@@ -99,6 +99,31 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Advanced Concepts: Revalidation */}
+        <div className="mt-8">
+          <Link href="/revalidation-lab" className="group relative block overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 bg-emerald-600 group-hover:bg-emerald-700 transition-colors" />
+            <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="space-y-4 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500 text-emerald-100 text-[10px] font-bold uppercase tracking-widest">
+                  Fine-Grained Caching
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-white">The Revalidation Lab</h2>
+                <p className="text-emerald-100/80 text-lg max-w-xl">
+                  Master <code className="bg-emerald-800 px-1 rounded">cacheLife</code> and <code className="bg-emerald-800 px-1 rounded">revalidateTag</code> to balance speed and freshness.
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-2xl text-white font-mono text-sm group-hover:scale-105 transition-transform">
+                <div className="text-emerald-300">// Function-level Cache</div>
+                <div>async function <span className="text-amber-300">getData</span>() {"{"}</div>
+                <div className="pl-4">'use cache';</div>
+                <div className="pl-4">cacheLife('<span className="text-emerald-300">seconds</span>');</div>
+                <div>{"}"}</div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
         {/* Admin Link */}
         <div className="mt-24 pt-12 border-t border-zinc-100 dark:border-zinc-900 text-center">
              <Link href="/dashboard" className="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
