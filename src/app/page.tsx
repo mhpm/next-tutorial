@@ -124,6 +124,29 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Advanced Concepts: Hybrid Strategy */}
+        <div className="mt-8">
+          <Link href="/hybrid-lab" className="group relative block overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 bg-slate-800 group-hover:bg-slate-900 transition-colors" />
+            <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+              <div className="space-y-4 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-700 text-slate-100 text-[10px] font-bold uppercase tracking-widest">
+                  Maximum Power
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-white">Next.js + TanStack Query</h2>
+                <p className="text-slate-300 text-lg max-w-xl">
+                  Hydrate server data into the client cache for the ultimate "App-like" experience.
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-2xl text-white font-mono text-sm group-hover:scale-105 transition-transform text-right">
+                <div className="text-slate-400">// HydrationBoundary</div>
+                <div>{"<"} <span className="text-indigo-400">HybridView</span> {"/>"}</div>
+                <div className="text-slate-500 text-[10px] mt-2 italic">No more spinners.</div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
         {/* Admin Link */}
         <div className="mt-24 pt-12 border-t border-zinc-100 dark:border-zinc-900 text-center">
              <Link href="/dashboard" className="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">

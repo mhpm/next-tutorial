@@ -1,3 +1,5 @@
+'use server';
+
 import { users } from '@/lib/db';
 
 export async function getUsers(nameQuery?: string) {
